@@ -21,3 +21,15 @@ names(sort(-table(plants$weight)))[1]
 quantile(plants$weight, c(0.75))
 # Shows the maximum weight that 50 percent of plants are under
 quantile(plants$weight, c(0.50))
+
+# Holds the weight averages for the three groups
+weightavg <- c()
+# Holds the three group names
+group <-c("Ctrl", "Trt1", "Trt2")
+
+for (x in plants$weight){
+  #Will loop through the plants table and calculate averages 
+}
+
+# Makes a bar chart for the average plant weight in the three groups
+barplot(weightavg, group)
