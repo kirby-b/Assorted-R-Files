@@ -1,9 +1,9 @@
 # Generates a vector with 20 random numbers
-numbers <- floor(runif(20, min=0, max=501))
+numbers <- floor(runif(20, min = 0, max = 501))
 
 # Generates an x and y for graphing later
-x <- floor(runif(20, min=0, max=101))
-y <- floor(runif(20, min=0, max=101))
+x <- floor(runif(20, min = 0, max = 101))
+y <- floor(runif(20, min = 0, max = 101))
 
 # Displays the highest value
 max(numbers)
@@ -20,4 +20,4 @@ names(sort(-table(numbers)))[1]
 plot(x, y)
 
 #Displays Line Chart
-plot(sort(x), sort(y), type="l")
+plot(sort(x), sort(y), type = "l")
