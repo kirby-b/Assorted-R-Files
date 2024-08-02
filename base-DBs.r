@@ -6,4 +6,5 @@ library(datasets)  # Load/unload base packages manually
 
 # LOAD A DATASET ################################################
 
-head(PlantGrowth)
+plants <- PlantGrowth
+
