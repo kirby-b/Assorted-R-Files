@@ -17,7 +17,7 @@ median(sort(numbers))
 names(sort(-table(numbers)))[1]
 
 # Displays Scatter Plot
-plot(x, y)
+plot(x, y, xlab="X", ylab="Y")
 
 #Displays Line Chart
-plot(sort(x), sort(y), type = "l")
+plot(sort(x), sort(y), type = "l", xlab="X", ylab="Y")

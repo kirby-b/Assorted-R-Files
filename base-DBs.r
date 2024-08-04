@@ -25,7 +25,7 @@ quantile(plants$weight, c(0.50))
 # Holds the weight averages for the three groups
 weightavg <- c(0, 0, 0)
 # Holds the three group names
-group <- c("Ctrl", "Trt1", "Trt2")
+group <- c("Control", "Treatment 1", "Treatment 2")
 
 # Holds values for iteration, counts of how many entries, and total weight
 i <- 1
@@ -53,4 +53,5 @@ weightavg[2] <- (t1 / t1count)
 weightavg[3] <- (t2 / t2count)
 
 # Makes a bar chart for the average plant weight in the three groups
-barplot(weightavg, names.arg = group, main = "Average Plant Weight by Group")
+barplot(weightavg, names.arg = group, main = "Average Plant Weight by Group", 
+        ylab="Dried Weight")
